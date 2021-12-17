@@ -17,20 +17,20 @@ class ClockTest < Minitest::Test
     assert_equal "00:00", Clock.new(hour: 24).to_s
   end
 
-  # def test_hour_rolls_over
-  #   skip
-  #   assert_equal "01:00", Clock.new(hour: 25).to_s
-  # end
+  def test_hour_rolls_over
+    # skip
+    assert_equal "01:00", Clock.new(hour: 25).to_s
+  end
 
-  # def test_hour_rolls_over_continuously
-  #   skip
-  #   assert_equal "04:00", Clock.new(hour: 100).to_s
-  # end
+  def test_hour_rolls_over_continuously
+    # skip
+    assert_equal "04:00", Clock.new(hour: 100).to_s
+  end
 
-  # def test_sixty_minutes_is_next_hour
-  #   skip
-  #   assert_equal "02:00", Clock.new(hour: 1, minute: 60).to_s
-  # end
+  def test_sixty_minutes_is_next_hour
+    # skip
+    assert_equal "02:00", Clock.new(hour: 1, minute: 60).to_s
+  end
 
   # def test_minutes_roll_over
   #   skip
