@@ -108,23 +108,23 @@ class ClockTest < Minitest::Test
     assert_equal "10:03", (clock + Clock.new(minute: 3)).to_s
   end
 
-  # def test_add_no_minutes
-  #   skip
-  #   clock = Clock.new(hour: 6, minute: 41)
-  #   assert_equal "06:41", (clock + Clock.new(minute: 0)).to_s
-  # end
+  def test_add_no_minutes
+    # skip
+    clock = Clock.new(hour: 6, minute: 41)
+    assert_equal "06:41", (clock + Clock.new(minute: 0)).to_s
+  end
 
-  # def test_add_to_next_hour
-  #   skip
-  #   clock = Clock.new(hour: 0, minute: 45)
-  #   assert_equal "01:25", (clock + Clock.new(minute: 40)).to_s
-  # end
+  def test_add_to_next_hour
+    # skip
+    clock = Clock.new(hour: 0, minute: 45)
+    assert_equal "01:25", (clock + Clock.new(minute: 40)).to_s
+  end
 
-  # def test_add_more_than_one_hour
-  #   skip
-  #   clock = Clock.new(hour: 10, minute: 0)
-  #   assert_equal "11:01", (clock + Clock.new(minute: 61)).to_s
-  # end
+  def test_add_more_than_one_hour
+    # skip
+    clock = Clock.new(hour: 10, minute: 0)
+    assert_equal "11:01", (clock + Clock.new(minute: 61)).to_s
+  end
 
   # def test_add_more_than_two_hours_with_carry
   #   skip
