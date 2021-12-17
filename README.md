@@ -6,3 +6,5 @@
 + You will find in the the-one-with-the-two-parties.rb file the first part of the test.
 + The clock.rb file is about the class and the clock_test.rb is about the spec. 
 
+## To launch minitest: 
+> ruby clock_test.rb 
