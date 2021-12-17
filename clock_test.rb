@@ -3,7 +3,7 @@ require_relative 'clock'
 
 class ClockTest < Minitest::Test
   def test_on_the_hour
-    # skip
+    # skip 
     assert_equal "08:00", Clock.new(hour: 8).to_s
   end
 
